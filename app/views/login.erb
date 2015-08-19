@@ -1,0 +1,64 @@
+<body>
+<div class="col-xs-6 col-xs-offset-3 well">
+    <h1>Rocket Bunny</h1>
+  <div class="content-wrapper">
+    <img class="wheelie-machine" src="http://ruby-on-rails-121801.nitrousapp.com:3000/images/gsxrwheelie.jpg">
+
+    <div class="loginform form-container">
+      
+      <h2>Login</h2>
+
+        <form action="/login" method="POST" class="login-form">
+
+          <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form control" name="email" id="email" value="" placeholder="email address" />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="text" class="form control" name="password" id="password" value="" placeholder="password" />
+            </div>
+
+            <div>
+              <input type="button" class="btn btn-success" name="submit" id="submit" value="submit" /> 
+            </div>
+
+        </form>
+
+      </div>
+
+      <div class="signupform form-container">
+        <h2>Sign Up</h2>
+
+          <form action="/signup" method="POST" class="signup-form">
+              
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" class="form control" name="first-name" id="first-name" value="" placeholder="first name" />
+              </div>
+
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" class="form control" name="last-name" id="last-name" value="" placeholder="last name" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form control" name="email" id="email" value="" placeholder="email address" />
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" class="form control" name="password" id="password" value="" placeholder="password" />
+              </div>
+
+              <div>
+                <input type="button" class="btn btn-success" name="submit" id="submit" value="submit" /> 
+              </div>
+
+          </form>
+        </div> 
+      </div>
+      </div>
+</body>

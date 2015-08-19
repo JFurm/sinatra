@@ -1,0 +1,76 @@
+html { 
+  background: url(http://img.inspiringwallpapers.net/wp-content/uploads/2014/06/sportbike.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+  font-family: tahoma, sans-serif;
+  border-image-source: 
+}
+
+body h1{
+  color: black;
+  text-align: center;
+}
+
+.loginform {
+  width: 180px;
+  margin-top: 5px
+}
+
+.signupform {
+  width: 180px;
+  margin-top: 5px
+}
+
+img.wheelie-machine{
+  position: center;
+  width: 500px;
+  box-shadow: 5px 5px 5px 5px black;
+
+}
+
+.content-wrapper{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.form-container{
+  display: inline-block;
+  width: 200px;
+  margin-left: 42px;
+  vertical-align: top;
+}
+
+.profile-info {
+  display: inline-block;
+  width: 190px;
+  margin-left: 15px;
+}
+
+.gender-radio{
+  margin: 5px auto;
+}
+
+.profile-pic img{
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 150px;
+}
+
+.profile-pic{
+  text-align: center; 
+ }
+
+.form-wrapper{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.well{
+  background-color:rgba (0,0,0,0.5);
+}
