@@ -11,35 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 3) do
+ActiveRecord::Schema.define(version: 2) do
 
   create_table "comments", force: :cascade do |t|
-    t.string   "username"
-    t.string   "comment"
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "pins", force: :cascade do |t|
-    t.string   "username"
-    t.string   "tags"
+    t.string   "image"
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
     t.integer  "comment_id"
-    t.string   "title"
-    t.string   "description"
-    t.string   "location"
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.string   "username"
-    t.string   "title"
-    t.string   "description"
-    t.string   "tags"
-    t.string   "location"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "users", force: :cascade do |t|
@@ -48,11 +35,6 @@ ActiveRecord::Schema.define(version: 3) do
     t.string   "password"
     t.string   "first_name"
     t.string   "last_name"
-    t.string   "gender"
-    t.date     "birthday"
-    t.integer  "age"
-    t.string   "location"
-    t.string   "website"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

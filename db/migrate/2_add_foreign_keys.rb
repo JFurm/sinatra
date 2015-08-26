@@ -4,6 +4,10 @@ class AddForeignKeys < ActiveRecord::Migration
             t.references :user
         end
       
+      change_table :comments do |t|
+            t.references :user
+        end
+      
           change_table :pins do |t|
             t.references :comment
         end
