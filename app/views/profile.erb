@@ -11,33 +11,40 @@
     </div>
              <form action="/profile/edit" method="POST">
 
-          <div class="form-group">
-            <label for="email">Email Adresss</label>
-            <input type="email" class="form-control" name="email" id="email" value="" placeholder="youraddress@gmail.com" />
-          </div>
+               <div class="form-group">
+                 <label for="username">Username</label>
+                 <br>
+                 <input type="text" class="form control" name="username" id="username" value="<%= @current_user.username %>" placeholder="username" />
+               </div>
+               
+                <div class="form-group">
+                  <label for="email">Email Adresss</label>
+                  <input type="email" class="form-control" name="email" id="email" value="<%= @current_user.email %>" placeholder="youraddress@gmail.com" />
+                </div>
 
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="text" class="form-control" name="password" id="password" value="" placeholder="password" />
-          </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" name="password" id="password" value="<%= @current_user.password %>" placeholder="password" />
+                </div>
 
-          <div class="form-group">
+         <!-- <div class="form-group">
             <label for="sex">Gender</label>
             <input type="radio" name="sex" value="male" >Male
             <input type="radio" name="sex" value="female" >Female
           </div>
+          -->
 
-          <div class="form-group">
-            <label for="fname">First Name</label>
-            <input type="text" class="form-control" name="fname" id="fname" value="" placeholder="first name" />
-          </div>
+                <div class="form-group">
+                  <label for="fname">First Name</label>
+                  <input type="text" class="form-control" name="first_name" id="first_name" value="<%= @current_user.first_name %>" placeholder="first name" />
+                </div>
 
-          <div class="form-group">
-            <label for="lname">Last Name</label>
-            <input type="text" class="form-control" name="lname" id="lname" value="" placeholder="last name" />    
-          </div>
+                <div class="form-group">
+                  <label for="lname">Last Name</label>
+                  <input type="text" class="form-control" name="last_name" id="last_name" value="<%= @current_user.last_name %>" placeholder="last name" />    
+                </div>
 
-          <button class="btn btn-success" type="submit">Submit</button>
+                <button class="btn btn-success" type="submit">Submit</button>
 
        </form>
       </div>

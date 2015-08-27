@@ -19,6 +19,7 @@ post '/login' do
   user = User.find_by(username: username)
   if user.password == password
     session[:user_id] = user.id
+    #@current_user = current_user
     redirect '/profile'
   else
     redirect '/login'
@@ -48,6 +49,29 @@ end
 
 post '/profile' do
   redirect '/'
+end
+
+get '/profile/edit' do
+  current_user
+  erb :profile
+end
+
+post '/profile/edit' do
+  current_user
+  erb :profile
+  username = params[:username]
+  email = params[:email]
+  password = params[:password]
+  first_name = params[:first_name]
+  last_name = params[:last_name]
+  
+  current_user.update username: username, email: email, password: password, first_name: first_name, last_name: last_name
+  redirect "/"
+end
+
+get '/pins' do
+  @current_user = current_user
+  erb :all_pins
 end
 
 get '/pins/new' do
